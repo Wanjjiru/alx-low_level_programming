@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - The  main function showing size of bytes 
+ * main - The main function showing size of bytes
  * Return: Always 0
- 	*/
+*/
 int main(void)
 {
 	char a;
