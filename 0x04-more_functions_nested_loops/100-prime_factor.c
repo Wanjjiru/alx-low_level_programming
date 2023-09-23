@@ -32,7 +32,7 @@ int main(void)
 	if (x > 2)
 		max = x;
 
-	printf("%ld\x", max);
+	printf("%ld\n", max);
 
 	return (0);
 }
