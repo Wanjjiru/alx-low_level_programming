@@ -5,7 +5,7 @@
  */
 void times_table(void)
 {
-	int row, column, x, tens, z;
+	int row, column, x, y, z;
 
 
 	for (row = 0; row <= 9; row++)
@@ -24,7 +24,7 @@ void times_table(void)
 	_putchar(',');
 	_putchar(' ');
 	_putchar(' ');
-	_putchar(ones + '0');
+	_putchar(z + '0');
 	}
 	else
 	{
