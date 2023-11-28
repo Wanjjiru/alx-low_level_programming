@@ -5,7 +5,7 @@
  *
  * Return: 0 on (Success)
  */
-int ain(void)
+int main(void)
 {
 	printf("%s\n", __FILE__);
 	return (0);
