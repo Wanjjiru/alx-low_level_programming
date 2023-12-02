@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 	}
 
 
-	array= (char *)main;
+	array = (char *)main;
 
 
 	for (x = 0; x < bytes; x++)
