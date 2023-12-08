@@ -1,24 +1,25 @@
-#ifndef _LIST_H_
-#define _LIST_H_
+#ifndef _LISTS_H_
+#define _LISTS_H_
 
-#include <stdio.h
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /**
  * struct list_s - linked list
- * *str: string
- * l: length of string
+ * @str: string
+ * @len: length of string
  * @next: pointer to the other string
  */
 
-size_t prnt_list(const list_h *h);
+typedef struct list_s
 
-typedef struct list_a
 {
-	char *s;
-	size_t l;
-	struct list_g *next;
-	list_t;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
+} list_t;
+
 void free_list(list_t *head);
 list_t *add_node_end(list_t **head, const char *str);
 list_t *add_node(list_t **head, const char *str);
