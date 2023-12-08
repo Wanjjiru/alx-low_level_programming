@@ -32,7 +32,11 @@ int main(int argc, char *argv[])
 	}
 
 
+<<<<<<< HEAD
 	array= (char *)main;
+=======
+	array = (char *)main;
+>>>>>>> be03b65de938bf0723effacd654f975cc36a6c9f
 
 
 	for (x = 0; x < bytes; x++)
