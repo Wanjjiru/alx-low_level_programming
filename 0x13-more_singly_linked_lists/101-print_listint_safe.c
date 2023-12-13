@@ -1,7 +1,5 @@
 #include "lists.h"
 #include <stdio.h>
-size_t loop_listint_length(const listint_t *head);
-size_t print_listint_safe(const listint_t *head);
 /**
  * loop_listint_length - gives unique  nodes total
  * @head: checked ptr to head
@@ -53,7 +51,7 @@ size_t print_listint_safe(const listint_t *head)
 
 	if (node == 0)
 	{
-		for (; head != NULL; node++)
+		for (;head != NULL; node++)
 		{
 			printf("[%p] %d\n", (void *)head, head->n);
 			head = head->next;
