@@ -8,26 +8,21 @@
 size_t free_listint_safe(listint_t **h)
 {
 	size_t length = 0;
-	int tofauti;
-	listint_t *tempo;
+	listint_t *curnt;
 
 	if (!h || !*h)
 		return (0);
 	while (*h)
 	{
-		tofauti = *h - (*h)->next;
-		if (tofauti > 0)
+		curnt = *h;
+		*h = (*h)->next;
+		if (curnt <= *h)
 		{
-			tempo = (*h)->next;
-			free(*h);
-			*h = tempo;
-			length++;
+			free(curnt);
 		}
 		else
 		{
-			free(*h);
-			*h = NULL;
-			length++;
+			free(curnt);
 			break;
 		}
 	}
